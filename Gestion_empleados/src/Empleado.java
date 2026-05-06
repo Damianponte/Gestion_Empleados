@@ -20,19 +20,25 @@ public class Empleado {
     }
 
     public String getApellido() {
+
         return apellido;
     }
 
     public double getSueldo() {
+
         return sueldo;
     }
 
     public int getId() {
+
         return id;
     }
+
+
     public void mostrarInfo(){
         System.out.println(nombre + apellido + "con el identificador de : "
                 + id + " tiene un sueldo de: " + sueldo);
 
     }
+
 }
