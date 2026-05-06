@@ -11,7 +11,7 @@ private int numeroEmpleadosACargo;
 
     @Override
     public double evaluarRendimiento() {
-        return 0;
+        return (numeroProyectos * 5) + (numeroEmpleadosACargo * 2);
     }
 
     public int getNumeroProyectos() {
@@ -24,6 +24,10 @@ private int numeroEmpleadosACargo;
 
     @Override
     public void mostrarInfo() {
-        super.mostrarInfo();
+        System.out.println("Programador: " + getNombre() + " " + getApellido() +
+                " | ID: " + getId() +
+                " | proyectos: " + numeroProyectos +
+                " | empleados a cargo: " + numeroEmpleadosACargo);
     }
+
 }

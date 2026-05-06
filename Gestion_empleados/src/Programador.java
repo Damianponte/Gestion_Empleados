@@ -24,6 +24,9 @@ public class Programador extends Empleado implements Evaluable{
 
     @Override
     public void mostrarInfo() {
-        super.mostrarInfo();
+        System.out.println("Programador: " + getNombre() + " " + getApellido() +
+                " | ID: " + getId() +
+                " | Lenguaje: " + lenguajePrincipal +
+                " | Líneas: " + lineasCodigo);
     }
 }

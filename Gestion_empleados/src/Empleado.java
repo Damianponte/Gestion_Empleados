@@ -4,14 +4,15 @@ public class Empleado {
     private String apellido;
     private double sueldo;
     private final int id;
-    private static int contador;
+    private static int contador=1;
 
     public Empleado(String nombre, String apellido, double sueldo) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.sueldo = sueldo;
-        this.id = contador;
         contador++;
+        this.id = contador;
+
     }
 
     public String getNombre() {
