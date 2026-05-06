@@ -9,6 +9,14 @@ public class Programador extends Empleado implements Evaluable{
         this.lenguajePrincipal = lenguajePrincipal;
     }
 
+    public int getLineasCodigo() {
+        return lineasCodigo;
+    }
+
+    public String getLenguajePrincipal() {
+        return lenguajePrincipal;
+    }
+
     @Override
     public double evaluarRendimiento() {
         return lineasCodigo / 100.0;
